@@ -1,39 +1,37 @@
-<!-- Copyright 2014-2022 Signal Messenger, LLC -->
+<!-- Copyright 2014-2021 Signal Messenger, LLC -->
 <!-- SPDX-License-Identifier: AGPL-3.0-only -->
+# Signal Unofficial (arm64)
 
-# Signal Desktop
+This repository is a fork of the official Signal destop with added support for arm64 on Windows and Apple Silicon you can download our [releases](https://github.com/dennisameling/Signal-Desktop/releases) for your device.
 
-Signal Desktop links with Signal on [Android](https://github.com/signalapp/Signal-Android) or [iOS](https://github.com/signalapp/Signal-iOS) and lets you message from your Windows, macOS, and Linux computers.
+## Ending support for Signal Unofficial on macOS
 
-[Install the production version](https://signal.org/download/) or help us out by [installing the beta version](https://support.signal.org/hc/articles/360007318471-Signal-Beta).
+The Signal team has introduced official Apple Silicon support in version [5.27.1](https://github.com/signalapp/Signal-Desktop/releases/tag/v5.27.1). This means that we won't be creating new builds of Signal Unofficial on macOS moving forward as there's no need for it anymore. The good news is that you can keep your message history when switching back to the official client!
 
-## Got a question?
+1. Download the official macOS client [from the Signal website](https://signal.org/nl/download/).
+2. Follow the steps in the "Migrate from Signal Unofficial to Signal Official" section below to copy your data over to the official client
+3. Enjoy official Signal Apple Silicon support!
 
-You can find answers to a number of frequently asked questions on our [support site](https://support.signal.org/).
-The [community forum](https://community.signalusers.org/) is another good place for questions.
+Version **5.33.0** will be the final macOS build of Signal Unofficial. New versions will only be released for the Windows platform moving forward. Users will see an in-app dialog telling them to switch over to the official client.
 
-## Found a Bug?
+## Tips and Tricks
+### Migrate from Signal Unofficial to Signal Official on macOS using the terminal (recommended when Signal Official has arm64 support)
 
-Please search for any [existing issues](https://github.com/signalapp/Signal-Desktop/issues) that describe your bug in order to avoid duplicate submissions.
+```mv ~/Library/Application\ Support/Signal ~/Library/Application\ Support/SignalBACKUP && cp -R -v ~/Library/Application\ Support/Signal\ Unofficial ~/Library/Application\ Support/Signal```
 
-## Have a feature request, question, comment?
+1. This backs up the Signal folder
+1. Then it overwrites the Signal folder with the Signal Unofficial folder.
 
-Please use our community forum: https://community.signalusers.org/
+### Migrate from Signal Official to Signal Unofficial on macOS using the terminal
 
-## Contributing Translations
+```mv ~/Library/Application\ Support/Signal\ Unofficial ~/Library/Application\ Support/Signal\ UnofficialBACKUP && cp -R -v ~/Library/Application\ Support/Signal ~/Library/Application\ Support/Signal\ Unofficial```
 
-Interested in helping to translate Signal? Contribute here:
-
-https://www.transifex.com/projects/p/signal-desktop
-
-## Contributing Code
-
-Please see [CONTRIBUTING.md](https://github.com/signalapp/Signal-Desktop/blob/development/CONTRIBUTING.md)
-for setup instructions and guidelines for new contributors. Don't forget to sign the [CLA](https://signal.org/cla/).
+1. This backs up the Signal Unofficial folder
+1. Then it overwrites the Signal Unofficial folder with the Signal folder.
 
 ## Contributing Funds
 
-You can donate to Signal development through the [Signal Technology Foundation](https://signal.org/donate), an independent 501c3 nonprofit.
+You can donate to the official Signal development through the [Signal Technology Foundation](https://Signal.org/donate), an independent 501c3 nonprofit.
 
 ## Cryptography Notice
 
@@ -46,6 +44,6 @@ The form and manner of this distribution makes it eligible for export under the 
 
 ## License
 
-Copyright 2013–2022 Signal, a 501c3 nonprofit
+Copyright 2013-2021 Signal, a 501c3 nonprofit
 
 Licensed under the AGPLv3: https://opensource.org/licenses/agpl-3.0
