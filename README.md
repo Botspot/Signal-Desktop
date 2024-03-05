@@ -6,6 +6,7 @@ This repository is a fork of the official Signal destop with added support for a
 
 On Linux ARM64, use the Pi-Apps store to keep it up to date.  
 [![badge](https://github.com/Botspot/pi-apps/blob/master/icons/badge.png?raw=true)](https://github.com/Botspot/pi-apps)  
+Pi-Apps will monitor this repo for new releases and will request to install new versions from here as they become available.  
 
 ## Ending support for Signal Unofficial on macOS
 
